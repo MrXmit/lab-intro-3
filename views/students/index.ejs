@@ -1,0 +1,16 @@
+<body>
+    <h1>Squid students</h1>
+    <ul>
+        <% students.forEach(student=> { %>
+            <li>
+                <%= student.name %>
+                    -
+                    <%= student.eliminated ? 'eliminated' : 'not eliminated' %>
+                    -
+                    <%= student.sex %>
+                    -
+                    <%= student._id %>
+            </li>
+            <% }) %>
+    </ul>
+</body>
